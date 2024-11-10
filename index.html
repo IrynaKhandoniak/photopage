@@ -4,79 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Iryna is a front-end engineer based in London."
-    />
-    <title>Front-end developer - Iryna Khandoniak</title>
+    <meta name="description" content="Iryna is a front-end engineer based in London." />
+    <title>Front-end Developer & Photographer - Iryna Khandoniak</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles/portfolio.css" />
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
-    <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"
     crossorigin="anonymous"
   ></script>
   
   </head>
   <body>
-    <div class="container">
-      <nav class="d-flex justify-content-between">
-        <a href="/" title="Homepage">
-          <img
-            src="images/logo.png"
-            class="logo d-none d-md-block"
-            alt="Iryna Logo"
-           
-          />
-          <img
-            src="images/logo-small.jpg"
-            class="logo d-block d-md-none"
-            alt="Iryna Logo"
-            
-          />
+    <!-- Navbar -->
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <!-- Logo on the left -->
+        <a class="navbar-brand" href="index.html">
+          <strong>IRR.ENN Photography</strong>
         </a>
-        <ul>
-          <li class="active">
-            <a href="/" title="Homepage"> Home</a>
-          </li>
-          <li>
-            <a href="/about.html" title="Iryna Khandooniak"> About</a>
-          </li>
-          <li>
-            <a href="/work.html" title="Iryna's work"> Work</a>
-          </li>
-          <li>
-            <a href="/contact.html" title="Contact Iryna"> Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="hero">
-      <p>Iryna Khandoniak</p>
-      <h1>PHOTOGRAPHY</h1>
-      <h2 class="mb-5">Front-end developer based in London</h2>
-      <div>
-        <a href="/contact.html" class="btn btn-branding" title="Contact me"
-          >Contact me</a
-        >
+        <!-- Toggler button for mobile view -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links on the right -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="/work.html">Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
+    
+    <header class="hero hero-background text-center text-white d-flex align-items-center justify-content-center">
+      <div>
+        <h1 class="display-4">PHOTOGRAPHER</h1>
+        <h2 class="mb-4">Iryna Khandoniak <br> Based in London</h2>
+        <a href="/contact.html" class="btn btn-primary btn-lg">Contact Me</a>
+      </div>
+    </header>
+
     <p class="text-center m-5">
       Check out some of my featured projects below
     </p>
@@ -84,7 +59,7 @@
       <div class="row mb-5">
         <div class="col d-none d-lg-block">
           <img
-            src="images/photography.png"
+            src="images/me1.jpeg"
             class="img-fluid"
             alt="Photo project preview"
           />
@@ -105,53 +80,42 @@
           </div>
         </div>
       </div>
-      <div class="row mb-5">
-        <div class="col">
-          <div class="project-desciption">
-            <h2 class="mb-5">Weather App</h2>
-            <p class="mb-5 text-muted">
-              I built a Vanilla JavaScript weather app in SheCodes Plus, an
-              advanced 8-week JavaScript coding workshop. Building upon my
-              previously-gained knowledge, I also became skilled in Bootstrap,
-              API’s, real-life development workflow, hosting, and advanced
-              JavaScript. I combined all of these skills to create a
-              fully-functioning weather app.
-            </p>
-            <a href="/work.html" class="btn btn-branding-outline">
-              Learn more
-            </a>
+      <section id="portfolio" class="portfolio-section py-5">
+        <div class="container">
+          <h2 class="text-center mb-5">My Portfolio</h2>
+          <div class="row">
+            <!-- Portfolio Item 1 -->
+            <div class="col-md-4 mb-4">
+              <div class="portfolio-item">
+                <img src="images/cityscape.jpeg" class="img-fluid" alt="Portfolio Item 1" />
+                <h3 class="mt-3">Cityscape</h3>
+                <p class="text-muted">Brief description of the project or photography work.</p>
+              </div>
+            </div>
+      
+            <!-- Portfolio Item 2 -->
+            <div class="col-md-4 mb-4">
+              <div class="portfolio-item">
+                <img src="images/nature4.jpeg" class="img-fluid" alt="Portfolio Item 2" />
+                <h3 class="mt-3">Landscape</h3>
+                <p class="text-muted">Brief description of the project or photography work.</p>
+              </div>
+            </div>
+      
+            <!-- Portfolio Item 3 -->
+            <div class="col-md-4 mb-4">
+              <div class="portfolio-item">
+                <img src="images/studio.jpeg" class="img-fluid" alt="Portfolio Item 3" />
+                <h3 class="mt-3">Studio Shoots</h3>
+                <p class="text-muted">Brief description of the project or photography work.</p>
+              </div>
+            </div>
+            
+            <!-- Add more portfolio items as needed -->
           </div>
         </div>
-        <div class="col d-none d-lg-block">
-          <img
-            src="images/weather.png"
-            class="img-fluid"
-            alt="Weather project preview"
-          />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col d-none d-lg-block">
-          <img
-            src="images/mushroomm.png"
-            class="img-fluid"
-            alt="Mushroom project preview"
-          />
-        </div>
-        <div class="col">
-          <div class="project-desciption">
-            <h2 class="mb-5">Mushroom Website</h2>
-            <p class="mb-5 text-muted">
-              I immersed myself in React development in SheCodes React. I used
-              my knowledge of this highly-demanded framework, along with the
-              most popular tools and technologies.
-            </p>
-            <a href="/work.html" class="btn btn-branding-outline">
-              Learn more
-            </a>
-          </div>
-        </div>
-      </div>
+      </section>
+      
       <footer>
         <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
           <div>
@@ -200,16 +164,9 @@
             <i class="fab fa-linkedin"></i>
           </a>
         </div>
-        <p class="text-center mt-5">
-          ✌️ This website was coded by Iryna Khandoniak, and is
-          <a
-            href="https://github.com/IrynaKhandoniak"
-            target="_blank"
-          >
-            open-sourced
-          </a>
-        </p>
+       
       </footer>
     </div>
   </body>
-</html>
+</html> 
+

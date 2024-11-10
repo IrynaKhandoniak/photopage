@@ -1,212 +1,108 @@
 :root {
-    --branding-color: #FFFFFF;
-    --secondary-color: #202020; /* Dark background color */
+    --background-color: #202020;
+    --text-color: GREY;
+    --accent-color: #BROWN;
+    --button-background: #FFFFFF;
+    --button-text-color: #000000;
     --heading-font-family: "Playfair Display", serif;
     --default-font-family: "Poppins", sans-serif;
-    --text-color: GREY; /* Light color for readability */
-    --accent-color: #6c63ff; /* Accent color */
   }
   
   body {
-    font-family: var(--default-font-family);
-    background-color: #111013;
+    background-color: var(--background-color);
     color: var(--text-color);
+    font-family: var(--default-font-family);
   }
   
   h1, h2, h3, h4, h5, h6 {
-    color: white;
+    color: var(--text-color);
     font-family: var(--heading-font-family);
     font-weight: bold;
-  }
-  
-  h1 {
-    font-size: 96px;
-    line-height: 1.5;
-  }
-  
-  h2 {
-    font-size: 64px;
-  }
-  
-  h3 {
-    font-size: 48px;
-  }
-  
-  p {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 30px;
-    color: var(--text-color);
   }
   
   .hero {
-    background: var(--secondary-color);
     text-align: center;
     padding: 80px 20px;
+    
+  }
+
+  .hero p, .hero h1, .hero h2 {
+    color: var(--text-color);
   }
   
-  .hero p {
-    font-size: 36px;
+  .btn {
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-size: 18px;
     font-weight: bold;
-    margin: 0;
-    color: var(--text-color);
+    text-transform: uppercase;
   }
   
-  .hero h2 {
-    font-family: var(--heading-font-family);
-    font-weight: normal;
-    line-height: 1.5;
-    font-size: 24px;
-    color: var(--text-color);
+  .btn:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
   }
   
-  .content-container {
-    padding: 60px 20px;
-  }
-  
-  .content h1 {
-    font-size: 64px;
-    line-height: 80px;
-    color: white;
-  }
-  
-  .content h2 {
-    font-size: 18px;
-    font-family: var(--default-font-family);
-    color: var(--text-color);
-  }
-  
-  .content h3 {
-    font-size: 24px;
-    line-height: 1.5;
-    font-family: var(--default-font-family);
-    color: var(--text-color);
-  }
-  
-  .content p {
-    font-size: 14px;
-    color: var(--text-color);
-  }
-  
-  .content {
-    margin: 30px;
-  }
-  
-  .btn-branding {
-    background: var(--branding-color);
-    border-radius: 4px;
-    color: grey;
-    font-size: 18px;
-    line-height: 27px;
-    padding: 15px 30px;
-  }
-  
-  .btn-branding-outline {
-    color: var(--branding-color);
-    border: 1px solid var(--branding-color);
-    border-radius: 4px;
-    font-size: 18px;
-    line-height: 27px;
-    padding: 15px 30px;
-  }
-  
-  .project-desciption {
-    padding: 120px 60px;
-  }
-  
-  .logo {
-    max-height: 40px;
-  }
-  
-  nav {
-    padding: 20px 0;
-  }
-  
-  nav ul {
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav li {
-    display: inline;
-    list-style: none;
-    line-height: 42px;
-    margin-left: 15px;
-  }
-  
-  nav a {
+  nav ul li a {
+    color: var(--accent-color);
     text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
     color: var(--text-color);
-    transition: all 100ms ease-in-out;
   }
   
-  nav a:hover,
-  nav li.active a {
-    color: var(--branding-color);
+  .hero-background {
+    background-image: url('../images/ya3.jpeg'); /* Ensure this is the correct path */
+    background-color: #333; /* Fallback color */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center center; /* Centers the image both vertically and horizontally */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    width: 100vw; /* Makes the hero section span the full viewport width */
+    height: calc(110vh - 100px);
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden; /* Ensures no scrollbars if the image overflows */
+  }
+  .portfolio-section {
+    background-color: #202020;; /* Light background for contrast */
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   
-  footer {
-    margin: 60px 0;
+  .portfolio-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #333;
   }
   
-  footer .contact-box {
-    background: var(--secondary-color);
-    padding: 30px 120px;
-    border-radius: 10px;
+  .portfolio-item {
+    text-align: center;
   }
   
-  footer .contact-box p {
-    margin: 0;
+  .portfolio-item img {
+    border-radius: 5px;
+    transition: transform 0.3s ease;
   }
   
-  footer .email-link {
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 24px;
+  .portfolio-item img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
   }
   
-  footer .email-link:hover {
-    color: var(--branding-color);
+  .portfolio-item h3 {
+    margin-top: 15px;
+    font-size: 1.25rem;
+    color: #333;
   }
   
-  footer .social-links a {
-    margin: 0 20px;
-    color: var(--branding-color);
-    background: var(--secondary-color);
-    padding: 10px 14px;
-    border-radius: 50%;
-    font-size: 18px;
-    transition: all 100ms ease-in-out;
+  .portfolio-item p {
+    color: #666;
   }
-  
-  footer .social-links a:hover {
-    color: grey;
-    background: var(--branding-color);
-  }
-  
-  @media (max-width: 900px) {
-    h1 {
-      font-size: 44px;
-      line-height: 1.5;
-    }
-  
-    h2 {
-      font-size: 44px;
-    }
-  
-    h3 {
-      font-size: 26px;
-    }
-  
-    .content {
-      text-align: center;
-      padding: 0;
-    }
-  
-    .project-desciption {
-      padding: 0;
-      text-align: center;
-    }
-  }
-  
   

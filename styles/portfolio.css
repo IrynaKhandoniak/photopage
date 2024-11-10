@@ -1,6 +1,6 @@
 :root {
     --background-color: #202020;
-    --text-color: GREY;
+    --text-color: whitesmoke;
     --accent-color: #BROWN;
     --button-background: #FFFFFF;
     --button-text-color: #000000;
@@ -56,13 +56,13 @@
   }
   
   .hero-background {
-    background-image: url('../images/ya3.jpeg'); /* Ensure this is the correct path */
-    background-color: #333; /* Fallback color */
+    background-image: url('../images/me.JPG'); /* Ensure this is the correct path */
+    background-color: whitesmoke; /* Fallback color */
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center center; /* Centers the image both vertically and horizontally */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     width: 100vw; /* Makes the hero section span the full viewport width */
-    height: calc(110vh - 100px);
+    height: calc(150vh - 100px);
     color: #fff;
 
     display: flex;
@@ -105,4 +105,35 @@
   .portfolio-item p {
     color: #666;
   }
+  .portfolio-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%; /* Adjust to your needs */
+  }
+  
+  .contact-btn {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue color or any color you want */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .contact-box {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center;     /* Center the button vertically if needed */
+    width: 100%;             /* Ensure it takes up the full width of the footer */
+    margin-top: 20px;        /* Optional: add some spacing between content above */
+  }
+  
+  .contact-box a {
+    margin: 0; /* Ensure there's no margin added around the button */
+  }
+  
   

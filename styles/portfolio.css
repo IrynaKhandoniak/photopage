@@ -1,7 +1,7 @@
 :root {
     --background-color: #202020;
     --text-color: whitesmoke;
-    --accent-color: #BROWN;
+    --accent-color: #82BAAD;
     --button-background: #FFFFFF;
     --button-text-color: #000000;
     --heading-font-family: "Playfair Display", serif;
@@ -42,7 +42,7 @@
   
   .btn:hover {
     background-color: var(--text-color);
-    color: var(--background-color);
+    color: #82BAAD;
   }
   
   nav ul li a {
@@ -53,6 +53,7 @@
   
   nav ul li a:hover {
     color: var(--text-color);
+    color: #82BAAD;
   }
   
   .hero-background {
@@ -115,7 +116,7 @@
   
   .contact-btn {
     padding: 10px 20px;
-    background-color: #007bff; /* Blue color or any color you want */
+    background-color: #82BAAD; /* Blue color or any color you want */
     color: white;
     border: none;
     border-radius: 5px;
@@ -136,4 +137,48 @@
     margin: 0; /* Ensure there's no margin added around the button */
   }
   
-  
+  /* Footer Styles */
+.footer {
+  background-color: #151515; /* Matches the screenshot */
+  color: #82BAAD;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Stack items on smaller screens */
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Spacing between sections */
+}
+
+.footer-logo {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #82BAAD;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  color: #82BAAD;
+}
+
+.footer-social a {
+  color: #82BAAD;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: #82BAAD; /* Accent color on hover */
+}
+
+.footer-rights {
+  font-size: 0.875rem;
+  color: #82BAAD; /* Muted text for copyright */
+}

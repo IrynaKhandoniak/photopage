@@ -1,133 +1,105 @@
 :root {
     --background-color: #202020;
     --text-color: whitesmoke;
-    --accent-color: white;
-    --button-background: #FFFFFF;
-    --button-text-color: #000000;
+    --accent-color: #82BAAD; 
     --heading-font-family: "Playfair Display", serif;
     --default-font-family: "Poppins", sans-serif;
-}
-
-/* Reset default styling */
-* {
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--default-font-family);
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: var(--default-font-family);
-}
-
-body {
+  }
+  
+  /* Contact Section */
+  .contact-section {
     background-color: var(--background-color);
-    color: var(--text-color);
-}
-
-/* Navbar styling */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: var(--background-color);
-}
-
-.navbar .brand {
-    font-weight: bold;
-    color: var(--text-color);
-}
-
-.navbar .nav-links a {
-    margin-left: 20px;
-    color: var(--accent-color);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.navbar .nav-links a:hover {
-    color: var(--text-color);
-}
-
-/* Main container styling */
-.main-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 20px;
-}
-
-.profile-image img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.about-me {
-    background-color: #292929;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.about-me h2 {
-    color: var(--accent-color);
-    font-size: 1.2rem;
-}
-
-.about-me h1 {
-    font-size: 2.5rem;
-    margin: 10px 0;
-    font-family: var(--heading-font-family);
-}
-
-.about-me p {
-    line-height: 1.6;
-    margin: 20px 0;
-}
-
-.social-icons a {
-    margin-right: 10px;
-    color: var(--text-color);
-    font-size: 1.2rem;
-    text-decoration: none;
-}
-
-/* Button Styling */
-.contact-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: var(--button-background);
-    color: var(--button-text-color);
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.contact-btn:hover {
-    background-color: var(--text-color);
-    color: var(--background-color);
-}
-
-/* Gallery styling */
-.gallery {
-    display: flex;
-    gap: 10px;
-}
-
-.gallery img {
-    width: 100%;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
-}
-
-/* Footer styling */
-footer {
+    padding: 60px 20px;
     text-align: center;
-    padding: 20px;
-    background-color: var(--background-color);
+  }
+  
+  .contact-title {
+    font-family: var(--heading-font-family);
+    font-size: 2.5rem;
     color: var(--text-color);
-    margin-top: 50px;
-}
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column; /* Vertical stack for small screens */
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .contact-info .contact-item {
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .contact-item h2 {
+    font-size: 1rem;
+    color: var(--accent-color);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .contact-item p {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-item p i {
+    margin-right: 10px;
+    color: var(--accent-color);
+    font-size: 1.2rem;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #151515;
+    padding: 40px 20px;
+    color: var(--text-color);
+    text-align: center;
+  }
+  
+  .footer-logo {
+    font-family: var(--heading-font-family);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    color: #82BAAD;
+  }
+  
+  .social-links a {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #82BAAD;
+  }
+  
+  .footer-rights {
+    font-size: 0.875rem;
+    color: #82BAAD;
+  }
+  

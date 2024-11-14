@@ -1,7 +1,7 @@
 :root {
     --background-color: #202020;
     --text-color: whitesmoke;
-    --accent-color: #BROWN;
+    --accent-color:#82BAAD;
     --button-background: #FFFFFF;
     --button-text-color: #000000;
     --heading-font-family: "Playfair Display", serif;
@@ -65,7 +65,7 @@
   .portfolio-section h2 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    color: #333;
+    color: whitesmoke;
   }
   
   .portfolio-item {
@@ -84,11 +84,11 @@
   .portfolio-item h3 {
     margin-top: 15px;
     font-size: 1.25rem;
-    color: #333;
+    color: #82BAAD;
   }
   
   .portfolio-item p {
-    color: #666;
+    color: whitesmoke;
   }
   .portfolio-item {
     display: flex;
@@ -96,5 +96,48 @@
     align-items: center;
     position: relative;
     height: 100%; /* Adjust to your needs */
+  }
+  .about-me {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center content */
+    gap: 20px; /* Add space between the image and text */
+    margin: 40px 0; /* Add vertical spacing */
+  }
+  
+  .about-me img {
+    width: 20%; /* Set a width for the image */
+    border-radius: 10px; /* Add rounded corners to the image */
+  }
+  
+  .about-me-content {
+    flex: 1; /* Make the text take up the remaining space */
+    padding: 10px;
+  }
+  
+  .social-icons a {
+    font-size: 1.5rem; /* Adjust the icon size */
+    margin-right: 10px; /* Add space between icons */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .social-icons a i {
+    color: #82BAAD;
+  }
+  
+  .social-icons a.facebook i {
+    color: #82BAAD; /* Facebook blue */
+  }
+  
+  .social-icons a.instagram i {
+    color: #82BAAD; /* Instagram pink */
+  }
+  
+  .social-icons a.linkedin i {
+    color: #82BAAD; /* LinkedIn blue */
+  }
+  
+  /* Hover effects */
+  .social-icons a:hover i {
+    color: #ffffff; /* Change to white or any desired color on hover */
   }
   
